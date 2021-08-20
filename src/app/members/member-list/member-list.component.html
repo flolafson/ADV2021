@@ -1,0 +1,4 @@
+<div style="height: 20px;"></div>
+<div *ngFor="let member of members | async" class="events-list jumbotron">        
+        <p class="lead">{{ member.lastName }} {{ member.firstName }}</p> 
+</div>

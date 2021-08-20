@@ -1,0 +1,7 @@
+<div *ngFor="let event of events | async" class="events-list jumbotron">
+        <p class="lead">{{ event.date.toDate() | date:'EEEE' }}, {{ event.date.toDate() | date:'d' }}. {{ event.date.toDate() | date:'MMMM' }} {{ event.date.toDate() | date:'yyyy' }}</p>
+      <h1 class="display-4">{{ event.name }}</h1>
+     <!-- <app-event-occupation [eventKey]="event.key"></app-event-occupation> -->
+      <a mat-flat-button color="primary"  (click)="navigateToEvent(event.key)" role="button">Details</a>
+    </div>
+    <div style="height: 40px;"></div>

@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    <span class="navbar-brand header-title">
+        <a class="navbar-brand" href="#">
+            ADV
+          </a>  
+    </span>
+    
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+  
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            
+          <a class="nav-link" (click)="navigateToEvents()">
+              <ion-icon name="calendar"></ion-icon>
+              Veranstaltungen
+          </a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link" (click)="navigateToBooking()">
+              <ion-icon name="checkbox-outline"></ion-icon>
+              Buchungen
+          </a>
+        </li>
+  
+        <li class="nav-item">
+            <a class="nav-link" (click)="navigateToMembers()">
+              <ion-icon name="people"></ion-icon>
+                Mitglieder
+            </a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link" (click)="navigateToAdmin()">
+            <ion-icon name="settings"></ion-icon>
+              Administration
+          </a>
+      </li>
+  
+        <li class="nav-item">
+          <a class="nav-link" (click)="navigateToAccount()">
+              <ion-icon name="person"></ion-icon>
+              Profil
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
